@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body{
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+h2{
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+a {
+  text-decoration: none;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
