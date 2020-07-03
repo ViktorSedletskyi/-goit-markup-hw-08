@@ -1202,7 +1202,7 @@ input {
   cursor: pointer;
 }
 
-section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -1278,12 +1278,16 @@ section {
   overflow: hidden;
 }
 
-.project-img-content {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+.project-img::before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .project-img-content {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   display: inline-block;
   position: absolute;
   font-size: 18px;
