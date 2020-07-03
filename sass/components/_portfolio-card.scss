@@ -1,0 +1,102 @@
+section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.project {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: -15px;
+}
+.project .item {
+  display: block;
+  width: 370px;
+  height: 404px;
+  overflow: hidden;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 0px solid #eeeeee;
+  box-sizing: border-box;
+
+  border-radius: 5px;
+   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project .item:hover,
+.project .item:focus{
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.project .item:nth-child(3n){
+  margin-right: -15px;
+}
+.project .item:nth-last-child(-n + 3){
+  margin-bottom: 0;
+}
+
+.example {
+  padding: 0;
+  margin: 20px 24px 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.type {
+  margin: 0;
+  padding: 0px 24px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.project-img{
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.project-img-content {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.project-img-content {
+  display: inline-block;
+  position: absolute;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 63px 24px;
+  margin: 0;
+}
+.project-img::before,
+.project-img-content{
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project a:hover .project-img-content,
+.project a:hover ::before,
+.project a:focus .project-img-content,
+.project a:focus ::before{
+  transform: translateY(0);
+  opacity: 1;
+}
+.project a,
+.project img {
+  display: block;
+}
