@@ -1,4 +1,97 @@
 .client {
+    @media screen and (max-width: 479px) {
+    display: inline-block;
+    align-items: center;
+    .img{
+      &+.img{margin-top: 30px;}
+    }}
+      @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .img {
+      &:nth-child(2n) {
+        margin-left: 30px;
+      }
+      &:nth-child(n + 3) {
+        margin-top: 30px;
+      }}
+      @media screen and (min-width: 768px) {
+        .img{
+        &:nth-child(2n) {
+          margin-left: 0px;
+        }
+        &:nth-child(n + 3) {
+          margin-top: 0px;
+       }
+        &:nth-child(3n),
+        &:nth-child(3n-1) {
+          margin-left: 30px;
+        }
+        &:nth-child(n + 4) {
+          margin-top: 30px;
+        }}
+      @media screen and (min-width:1200px){
+        .img{
+        &:nth-child(n + 4) {
+          margin-top: 0px;
+        }
+        & + .img {
+          margin-left: 30px;
+        }}
+      }
+         }
+    }
+    
+  }
+  .img-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    color: var(--svg4);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms $animation,
+    color 250ms $animation; 
+        &:hover,
+        &:focus{
+    border: 1px solid $accent-color;
+    color: $accent-color; 
+  }
+  }
+  .client-main {
+      padding-top: 60px;
+      padding-bottom: 60px;
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    color: $title-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+        h2 {
+        margin-top: 0;
+          margin-bottom: 30px;
+          font-size: 28px;
+          line-height: 1.18;
+              
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 50px;
+          font-size: 36px;
+          line-height: 1.17;
+        }
+        
+      }
+  }
+
+
+
+/*.client {
   display: flex;
   justify-content: center;
  
@@ -31,4 +124,4 @@
   height: 90px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/

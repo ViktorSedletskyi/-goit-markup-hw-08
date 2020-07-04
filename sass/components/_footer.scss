@@ -1,135 +1,205 @@
-.footer{
-  background: #2F303A;
-}
-.footer-main{
-  display: flex;
-}
-.adress-main{
-  margin: 48px 69px 28px 0;
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $footer-background;
+
+    .icon-social {
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: #ffffff;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
+.footer-adress {
+    display: flex;
+    flex-direction: column;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+
+
+    .city {
+        color: $primary-white-color;
+        text-decoration: none;
+    }
+
+    .item {
+        display: inline-block;
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .contact-m,
+    .contact-t {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+    }
+}
 .connect {
-  padding: 56px 0;
+    margin-bottom: 60px;
 }
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 
-.logo-f{
-  display: inline-block;
-  padding-bottom: 10px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em; 
+    width: 206px;
 }
 
 
-.city{
+.social .link,
+.subscribe {
+    display: inline-block;
+    margin-bottom: 20px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-}
-.footer-adress a{
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+    color: $primary-white-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
 
-.city,
-.contact-m{
-  padding-bottom: 9px;
+.button-f {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    // display: inline-block;
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    text-align: center;
+
+    border: 0;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
 }
 
-.article{
-  display: inline-block;
-  padding-bottom: 21px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.social {
-  display: flex;
-}
-.img-social{
-  border: 50%;
-}
-
-.social .link {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    & .link + .link {
+.button-f::after {
+  content: ' ';
+  background-image: url(../images/iconsend.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
   margin-left: 10px;
 }
-  }
 
+
+// /* Разметка формы в футере */
 
 .subscribe {
-  align-items: center;
-  margin-left: auto;
-  padding-top: 56px;
-  padding-bottom: 50px;
-}
-.footer form {
-  display: flex;
-  align-items: center;
-}
-input {
-  background-color:#2f303a;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 18px 58px 18px 12px;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+    // display: flex;
+    // flex-direction: column;
+
+    input {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        // height: 50px;
+        padding: 15px 16px;
+        margin-bottom: 20px;
+
+        color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: $footer-background;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+
+        @media screen and (min-width: 768px) {
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
+    }
+
+    input::placeholder {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.6);
+
+
+    }
 }
 
-.button-f{
+.footer-tablet {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
 
-  margin-left: 12px;
-  display: inline-flex;
-  padding: 10px 28px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  min-width: 200px;
-  height: 50px;
-  color: #ffffff;
-  background: #2196f3;
-  font-weight: 900;
-  font-size: 16px;
-  line-height: 1.87;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-    &:after {
-    content: ' ';
-    background-image: url(../images/iconsend.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
 }
+
+.flex-footer {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        // padding-bottom: 28px;
+    }
 }
-.caption{
-  margin: 0;
-  padding: 18px 0px 21px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
+
+.address-main {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        margin-right: 70px;
+    }
+}
+
+.social {
+    margin-bottom: 60px;
+}
+
+.input {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+
+.button-f {
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
