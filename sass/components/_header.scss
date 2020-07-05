@@ -4,115 +4,57 @@
 
 }
 
-.flex-header {
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-
-}
-
-.header-burger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-// .header-studio .flex-nav,
-// .header-portfolio .flex-nav {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-
-// }
-
 .menu-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        fill: $accent-color;
-    }
-
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+  display: inline-flex;
+  margin: 10px 15px;
+  padding: 0;
+  border: none;
+  background-color: $background;
+  transition: fill 250ms $animation;
+  &:hover,
+  &:focus{
+     fill: $accent-color;
 }
-
-.menu-button.is-open {
-
-    &:hover .icon-cross,
-    &:focus .icon-cross {
-        fill: $accent-color;
-    }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .icon-cross {
-    display: block;
-    fill: $title-text-color;
+  display: block;
 }
 
 .menu-button.is-open .icon-menu {
-    display: none;
+  display: none;
+  &:hover,
+  &:focus{
+     fill: $accent-color;
 }
-
+}
 .menu-container {
-
-
-    background-color: #fff;
-
-
-
-    text-align: center;
-    font-size: 20px;
-
-    @media screen and (max-width: 767px) {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        z-index: 4;
-        padding: 34px 15px 44px 15px;
-        height: 393px;
-        border-top: 1px solid #ECECEC;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16),
-            0px 2px 4px rgba(0, 0, 0, 0.08),
-            0px 4px 8px rgba(0, 0, 0, 0.04);
-
-
-
-        &.is-open {
-            display: block;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-grow: 1;
-    }
-}
-
-%font-header {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    font-style: normal;
-}
+  background-color: $background;
+  flex-grow: 1;
+  @media screen and (max-width: 767px) {
+    border-top: 1px solid #ECECEC;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 4;
+    &.is-open {
+      display: block;
+    }    
+  }
+  @media screen and (min-width: 768px) {
+  display: flex;
+  align-items: center;
+}}
 
 .logo{
 font-family: Raleway;

@@ -128,16 +128,13 @@ a {
   background-color: transparent;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*@media screen and (min-width: 768px) {
+        display: none;
+    }*/
 }
 
 .menu-button:hover, .menu-button:focus {
   fill: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
 }
 
 .menu-button.is-open:hover .icon-cross,
@@ -145,19 +142,17 @@ a {
   fill: #2196f3;
 }
 
-.menu-button .icon-cross {
-  display: none;
-}
-
+/*.menu-button .icon-cross {
+    display: none;
+}*/
 .menu-button.is-open .icon-cross {
   display: block;
   fill: #212121;
 }
 
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
+/*.menu-button.is-open .icon-menu {
+    display: none;
+}*/
 .menu-container {
   background-color: #fff;
   text-align: center;
@@ -902,7 +897,7 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 
 @media screen and (min-width: 1200px) {
   .service-main {
-    DISPLAY: BLOCK;
+    display: block;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -925,11 +920,14 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   position: relative;
 }
 
-.name {
+.img-wrap p {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.name {
   padding-top: 27px;
   padding-bottom: 27px;
   color: #ffffff;

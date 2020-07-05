@@ -2,9 +2,9 @@
     display: none;
 
     @media screen and (min-width: 1200px) {
-DISPLAY:BLOCK;
-    padding-top: 94px;
-    padding-bottom: 94px;
+        display: block;
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
@@ -25,16 +25,16 @@ DISPLAY:BLOCK;
 }
 
 .img-wrap {
-
     position: relative;
-}
-.name {
-    
+
+    p {
         position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
-    
+    }
+}
+.name{
     padding-top: 27px;
     padding-bottom: 27px;
 
@@ -48,3 +48,7 @@ DISPLAY:BLOCK;
     text-align: center;
     text-transform: uppercase;
 }
+
+
+
+
