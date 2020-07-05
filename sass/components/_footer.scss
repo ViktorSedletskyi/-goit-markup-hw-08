@@ -14,7 +14,7 @@
         margin-right: 69px;
     }
     & ul{
-        color: $adres-text-color;
+
         text-decoration: none;
     }
 }
@@ -125,10 +125,7 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-
-}
-
-.button-f::after {
+    &:after {
   content: ' ';
   background-image: url(../images/iconsend.svg);
   background-repeat: no-repeat;
@@ -136,7 +133,7 @@ color: rgba(255, 255, 255, 0.6);
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
+}}
 
 
 // /* Разметка формы в футере */

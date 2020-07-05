@@ -1207,7 +1207,6 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 }
 
 .adress-main ul {
-  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
@@ -1321,7 +1320,7 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   letter-spacing: 0.06em;
 }
 
-.button-f::after {
+.button-f:after {
   content: ' ';
   background-image: url(../images/iconsend.svg);
   background-repeat: no-repeat;
@@ -1539,6 +1538,7 @@ section {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
