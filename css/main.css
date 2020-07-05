@@ -1107,7 +1107,8 @@ textarea:not(:placeholder-shown) + .form-label-comment {
 
 .img-client:hover, .img-client:focus {
   border: 1px solid #2196f3;
-  color: #2196f3;
+  --color4: #2196f3;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
