@@ -3,25 +3,30 @@
     padding-bottom: 60px;
 
     background-color: $footer-background;
-
-    .icon-social {
-        background-color: rgba(255, 255, 255, 0.1);
-        fill: #ffffff;
-
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            background-color: $accent-color;
-        }
-
-    }
-
+    
     @media screen and (max-width: 1199px) {
         text-align: center;
     }
 }
 
+.adress-main{
+        @media screen and (min-width: 1200px) {
+        margin-right: 69px;
+    }
+    & ul{
+        color: $adres-text-color;
+        text-decoration: none;
+    }
+}
+.logo-f{
+  display: inline-block;
+  padding-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em; 
+}
 .footer-adress {
     display: flex;
     flex-direction: column;
@@ -31,31 +36,35 @@
     font-size: 14px;
     line-height: 1.71;
 
-
-
     .city {
         color: $primary-white-color;
         text-decoration: none;
     }
 
     .item {
-        display: inline-block;
+    
         margin-bottom: 8px;
-
+        
+        text-decoration: none;
+color: rgba(255, 255, 255, 0.6);
         &:last-child {
             margin-bottom: 0px;
         }
     }
+}
 
-    .contact-m,
-    .contact-t {
-        color: rgba(255, 255, 255, 0.6);
-        text-decoration: none;
-    }
+
+.article{
+  display: inline-block;
+  padding-bottom: 21px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.connect {
-    margin-bottom: 60px;
-}
+
 .social{
     display: flex;
     justify-content: space-between;
@@ -65,11 +74,23 @@
     width: 206px;
 }
 
+.img-social{
+  border: 50%;
+}
 
+.social .link {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & .link + .link {
+  margin-left: 10px;
+}
+  }
 .social .link,
 .subscribe {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: auto;
 
     color: $primary-white-color;
 
@@ -159,7 +180,8 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 60px;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -176,18 +198,19 @@
     }
 }
 
-.address-main {
-    @media screen and (max-width: 767px) {
+.footer .adress-main {
+
+    @media screen and (min-width: 480px) {
         margin-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
         text-align: left;
-        margin-right: 70px;
+        margin: 0px 69px 28px 0;
     }
 }
 
-.social {
+.footer .social {
     margin-bottom: 60px;
 }
 
@@ -199,7 +222,12 @@
 
 
 .button-f {
+    
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
     @media screen and (min-width: 1200px) {
+        display: inline-block;
         margin-left: 12px;
     }
 }

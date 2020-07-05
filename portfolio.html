@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <!--<link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">-->
-    <!--<link rel="stylesheet" href="./css/styles.css">-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
@@ -16,45 +15,53 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo">
-                    <span style="color: #2196F3">Web</span>
-                    <span style="color: #000000">Studio</span>
-                </a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link ">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
-                </ul>
-                <ul class="contact list">
-                    <li class="item">
-                        <a href="mailto:info@devstudio.com" class="link">
-                            <svg class="icon-adres-nav" width="16" height="12">
-                                <use xlink:href="./images/sprite.svg#envelope" />
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="item">
-                        <a href="tel:+380961111111" class="link">
-                            <svg class="icon-adres-nav" width="10" height="15">
-                                <use xlink:href="./images/sprite.svg#smartphone" />
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header">
+        <div class="container flex-header">
+            <div class="header-burger">
+                <a href="./index.html" class="logo"><span class="accent" style="color: #2196F3">Web</span> Studio</a>
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/header/close_24px.svg"></use>
+                        <use class=" icon-menu" href="./images/header/menu_24px.svg"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav>
+                    <ul class="site-nav list flex-nav"">
+                <li class=" item">
+                        <a href="./index.html" class="link">Студия</a>
+                        </li>
+                        <li class="item">
+                            <a href="./portfolio.html" class="link current">Портфолио</a>
+                        </li>
+                        <li class="item"><a href="" class="link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <address class="contacts-nav mail-nav">
+                    <a href="mailto:info@devstudio.com" class="link"><svg class="nav-icon" width="16" height="11">
+                            <use href="./images/sprite.svg#envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
 
+                    <a href="tel:+380961111111" class="link">
+                        <svg class="nav-icon" width="10" height="15">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                </address>
+            </div>
+
+
+        </div>
     </header>
     <main>
 
         <section class="portfolio">
             <!--фильтр-->
             <div class="container">
-                <ul class="menu list container">
+                <ul class="menu list">
                     <li class="item"><button type="button" class="button">Все</button></li>
                     <li class="item"><button type="button" class="button">Веб-сайты</button></li>
                     <li class="item"><button type="button" class="button">Приложения</button></li>
@@ -62,16 +69,16 @@
                     <li class="item"><button type="button" class="button">Маркетинг</button></li>
                 </ul>
                 <!--примеры работ-->
-                <ul class="project list container">
+                <ul class="project list">
                     <li class="item">
-                        <a href="">
+                        <a href="" class="card">
                             <div class="project-img">
                                 <picture>
                                     <source
                                         srcset="./images/portfolio/mobile/laptop450.jpg 1x, ./images/portfolio/mobile/laptop900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/laptop354.jpg 1x, ./images/portfolio/tablet/laptop708.jpg 2x"
+                                        srcset="./images/portfolio/table/laptop354.jpg 1x, ./images/portfolio/table/laptop708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/laptop370.jpg 1x, ./images/portfolio/desktop/laptop740.jpg 2x"
@@ -99,7 +106,7 @@
                                         srcset="./images/portfolio/mobile/bask450.jpg 1x, ./images/portfolio/mobile/bask900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/bask354.jpg 1x, ./images/portfolio/tablet/bask708.jpg 2x"
+                                        srcset="./images/portfolio/table/bask354.jpg 1x, ./images/portfolio/table/bask708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/bask370.jpg 1x, ./images/portfolio/desktop/bask740.jpg 2x"
@@ -128,7 +135,7 @@
                                         srcset="./images/portfolio/mobile/rs450.jpg 1x, ./images/portfolio/mobile/rs900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/rs354.jpg 1x, ./images/portfolio/tablet/rs708.jpg 2x"
+                                        srcset="./images/portfolio/table/rs354.jpg 1x, ./images/portfolio/table/rs708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/rs370.jpg 1x, ./images/portfolio/desktop/rs740.jpg 2x"
@@ -157,7 +164,7 @@
                                         srcset="./images/portfolio/mobile/hp450.jpg 1x, ./images/portfolio/mobile/hp900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/hp354.jpg 1x, ./images/portfolio/tablet/hp708.jpg 2x"
+                                        srcset="./images/portfolio/table/hp354.jpg 1x, ./images/portfolio/table/hp708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/hp370.jpg 1x, ./images/portfolio/desktop/hp740.jpg 2x"
@@ -187,7 +194,7 @@
                                         srcset="./images/portfolio/mobile/boxes450.jpg 1x, ./images/portfolio/mobile/boxes900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/boxes354.jpg 1x, ./images/portfolio/tablet/boxes708.jpg 2x"
+                                        srcset="./images/portfolio/table/boxes354.jpg 1x, ./images/portfolio/table/boxes708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/boxes370.jpg 1x, ./images/portfolio/desktop/boxes740.jpg 2x"
@@ -216,7 +223,7 @@
                                         srcset="./images/portfolio/mobile/monitor450.jpg 1x, ./images/portfolio/mobile/monitor900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/monitor354.jpg 1x, ./images/portfolio/tablet/monitor708.jpg 2x"
+                                        srcset="./images/portfolio/table/monitor354.jpg 1x, ./images/portfolio/table/monitor708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/monitor370.jpg 1x, ./images/portfolio/desktop/monitor740.jpg 2x"
@@ -246,7 +253,7 @@
                                         srcset="./images/portfolio/mobile/book450.jpg 1x, ./images/portfolio/mobile/book900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/book354.jpg 1x, ./images/portfolio/tablet/book708.jpg 2x"
+                                        srcset="./images/portfolio/table/book354.jpg 1x, ./images/portfolio/table/book708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/book370.jpg 1x, ./images/portfolio/desktop/book740.jpg 2x"
@@ -275,7 +282,7 @@
                                         srcset="./images/portfolio/mobile/lab450.jpg 1x, ./images/portfolio/mobile/lab900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/lab354.jpg 1x, ./images/portfolio/tablet/lab708.jpg 2x"
+                                        srcset="./images/portfolio/table/lab354.jpg 1x, ./images/portfolio/table/lab708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/lab370.jpg 1x, ./images/portfolio/desktop/lab740.jpg 2x"
@@ -303,7 +310,7 @@
                                         srcset="./images/portfolio/mobile/desktop450.jpg 1x, ./images/portfolio/mobile/desktop900.jpg 2x"
                                         media="(max-width: 767px)" type="image/jpg">
                                     <source
-                                        srcset="./images/portfolio/tablet/desktop354.jpg 1x, ./images/portfolio/tablet/desktop708.jpg 2x"
+                                        srcset="./images/portfolio/table/desktop354.jpg 1x, ./images/portfolio/table/desktop708.jpg 2x"
                                         media="(max-width: 1199px)" type="image/jpg">
                                     <source
                                         srcset="./images/portfolio/desktop/desktop370.jpg 1x, ./images/portfolio/desktop/desktop740.jpg 2x"
@@ -330,51 +337,54 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-main container">
-                <!--контакты-->
-                <div class="adress-main">
-                    <a href="./index.html" class="logo-f">
-                        <span style="color: #2196F3">Web</span>
-                        <span style="color: #ffffff">Studio</span>
-                    </a>
-                    <ul class="footer-adress list">
-                        <li class="city">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="contact-m"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="contact-t"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                    </ul>
-                </div>
+            <div class="flex-footer">
+                <div class="footer-tablet">
+                    <!--контакты-->
+                    <div class="adress-main">
+                        <a href="./index.html" class="logo-f">
+                            <span style="color: #2196F3">Web</span>
+                            <span style="color: #ffffff">Studio</span>
+                        </a>
+                        <ul class="footer-adress list">
+                            <li class="city">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li class="contact-m item"><a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="contact-t item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </div>
 
-                <!--соцсети-->
-                <div class="connect">
-                    <p class="article">Присоединяйтесь</p>
-                    <ul class="social list">
-                        <li class="link">
-                            <a href="" aria-label="Ссылка на Facebook" class="img-social">
-                                <svg class="icon-social" width="20" height="20">
-                                    <use href="./images/sprite.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="link"><a href="" aria-label="Ссылка на Twitter" class="img-social">
-                                <svg class="icon-social" width="20" height="20">
-                                    <use href="./images/sprite.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="link"><a href="" aria-label="Ссылка на Instagram" class="img-social">
-                                <svg class="icon-social" width="20" height="20">
-                                    <use href="./images/sprite.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="link"><a href="" aria-label="Ссылка на LinkedIn" class="img-social">
-                                <svg class="icon-social" width="20" height="20">
-                                    <use href="./images/sprite.svg#linkedin">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <!--соцсети-->
+                    <div class="connect">
+                        <p class="article">Присоединяйтесь</p>
+                        <ul class="social list">
+                            <li class="link">
+                                <a href="" aria-label="Ссылка на Facebook" class="img-social">
+                                    <svg class="icon-social" width="20" height="20">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link"><a href="" aria-label="Ссылка на Twitter" class="img-social">
+                                    <svg class="icon-social" width="20" height="20">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link"><a href="" aria-label="Ссылка на Instagram" class="img-social">
+                                    <svg class="icon-social" width="20" height="20">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link"><a href="" aria-label="Ссылка на LinkedIn" class="img-social">
+                                    <svg class="icon-social" width="20" height="20">
+                                        <use href="./images/sprite.svg#linkedin">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="subscribe">
                     <p class="article">Подписаться на рассылку</p>
@@ -390,9 +400,10 @@
 
                 </div>
             </div>
-            <p class="caption">2020 | Developed by GoIT Students</p>
+
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

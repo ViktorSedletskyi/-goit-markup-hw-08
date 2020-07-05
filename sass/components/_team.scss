@@ -1,33 +1,16 @@
 .taem-main {
-    background-color: #F5F4FA;
+    background-color:  #F5F4FA;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 }
-
-.person {
-    margin-bottom: 10px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-}
-
-/* Профессии нашей команды */
-.job {
-    margin-bottom: 16px;
-
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-}
-
 .team {
-
-
-    .item {
-
-
-
+ .item {
+      display: flex;
+      flex-wrap: wrap;
         width: 100%;
         height: auto;
         background-color: $primary-white-color;
@@ -51,7 +34,8 @@
         }
 
         @media screen and (min-width: 1200px) {
-            width: calc((100% - 8*15px) / 4);
+          display: flex;  
+          width: calc((100% - 8*15px) / 4);
             height: auto;
             margin: 15px;
         }
@@ -72,125 +56,48 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 24px;
-
-    .social {
-    display: flex;
-    justify-content: center;
-    // justify-content: space-between;
-    // margin-bottom: 0;
-
-    li:not(:last-child) {
-        margin-right: 10px;
-    }
+    width: 100%;
 
 }
 
 
-.icon-social {
-    display: flex;
+
+
+    .img-social {
+     display: flex;
+     align-items: center;
     justify-content: center;
-    align-items: center;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    fill: #afb1b8;
-
-
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+       &:hover,
+       &:focus{
+       border-radius: 50%;
+       background-color: #2196f3;
+       --color4: #ffffff;
+       cursor: pointer;
+      }}
+.person {
+    margin-bottom: 10px;
 
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-        fill: $primary-white-color;
-    }
-
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 
-.photo {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+/* Профессии нашей команды */
+.job {
+    margin-bottom: 16px;
 
-    // @media screen and (min-width: 768px) {
-    //     width: 100%;
-    //     height: auto;
-    // }
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
 
 
 
-    //.taem-main{
-    //  padding-top: 94px;
-    //  padding-bottom: 94px;
-    //  background: #F5F4FA;
-    //}
-    //.team {
-    //  display: flex;
-    //    & .item{
-    //   overflow: hidden;
-    //    background-color: #FFFFFF;
-    //    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    //       0px 1px 3px rgba(0, 0, 0, 0.12);
-    //    border-radius: 4px;
-    //    }
-    //    & + .item {
-    //    margin-left: 30px;
-    //    }
-    //   & .item:not(:first-child) {
-    //   margin-left: auto;
-      //  }
-    //}
 
-    //.team img{
-    //  display: block;
-    //}
-    //.person{
-    //  margin: 0;
-    // margin-top: 30px;
-    //  margin-bottom: 10px;
-    // font-weight: 500;
-    // font-size: 16px;
-    //  line-height: 1.19;
-    // text-align: center;
-    // letter-spacing: 0.03em;
-    //}
-    //.job{
-    //  margin: 0;
-    //  margin-bottom: 16px;
-    // font-weight: 500;
-    // font-size: 16px;
-    // line-height: 1.19;
-    // text-align: center;
-    // letter-spacing: 0.03em;
-    // color: #757575;
-    //}
-    //.social {
-    //  display: flex;
-    // justify-content: center;
-    // font-weight: 400;
-    // font-size: 16px;
-    // & .link + .link {
-    // margin-left: 10px;
-    //}
-    //}
-    //.team .social {
-    //  padding-bottom: 24px;
-    //}
-    //.img-social {
-    //  display: flex;
-    //  align-items: center;
-    //  justify-content: center;
-    // width: 44px;
-    // height: 44px;
-    // transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    // fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    // border-radius: 50%;
-    //   &:hover,
-    //   &:focus{
-    //   border-radius: 50%;
-    //   background-color: #2196f3;
-    //   --color4: #ffffff;
-    //   cursor: pointer;
-    //   }

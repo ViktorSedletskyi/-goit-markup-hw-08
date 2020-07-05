@@ -7,9 +7,15 @@ html {
   *::after {
     box-sizing: inherit;
   }
-  body{
-  font-family: Roboto, sans-serif;
-  color: #212121;
+
+  body {
+  color:  #212121;
+  background-color: $background;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 h2{
   margin-top: 0px;
@@ -28,4 +34,25 @@ ul{
   padding: 0;
   margin: 0;
   list-style: none;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid goldenrod; */
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
 }
