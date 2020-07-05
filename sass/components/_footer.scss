@@ -3,7 +3,7 @@
     padding-bottom: 60px;
 
     background-color: $footer-background;
-    
+    max-width: 1600px;
     @media screen and (max-width: 1199px) {
         text-align: center;
     }
@@ -46,7 +46,7 @@
         margin-bottom: 8px;
         
         text-decoration: none;
-color: rgba(255, 255, 255, 0.6);
+
         &:last-child {
             margin-bottom: 0px;
         }
@@ -73,7 +73,9 @@ color: rgba(255, 255, 255, 0.6);
 
     width: 206px;
 }
-
+.footer .icon-social{
+    --color4: #ffffff;
+}
 .img-social{
   border: 50%;
 }
@@ -125,9 +127,10 @@ color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    &:after {
+
+        &:after {
         content: ' ';
-        background-image: url(../images/sprite1.svg#iconsend);
+        background-image: url(../images/iconsend.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 24px;
@@ -191,6 +194,7 @@ color: rgba(255, 255, 255, 0.6);
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        max-width: auto;
         // padding-bottom: 28px;
     }
 }
