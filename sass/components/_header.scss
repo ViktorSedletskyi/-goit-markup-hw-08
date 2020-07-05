@@ -221,9 +221,8 @@ nav {
 
         &:hover,
         &:focus {
-            color: $accent-color;
-            cursor: pointer;
-            fill: currentColor;
+            color: #2196F3;
+            --color3: #2196F3;
         }
 
 

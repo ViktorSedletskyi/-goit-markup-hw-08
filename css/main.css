@@ -321,9 +321,8 @@ nav {
 }
 
 .mail-nav .link:hover, .mail-nav .link:focus {
-  color: #2196f3;
-  cursor: pointer;
-  fill: currentColor;
+  color: #2196F3;
+  --color3: #2196F3;
 }
 
 @media screen and (min-width: 768px) {
