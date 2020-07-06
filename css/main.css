@@ -1511,6 +1511,12 @@ textarea:not(:placeholder-shown) + .form-label-comment {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .footer .adress-main {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .footer .adress-main {
     margin-bottom: 60px;
