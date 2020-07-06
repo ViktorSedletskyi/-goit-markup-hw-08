@@ -129,7 +129,11 @@ padding-bottom: 60px;
    transition: transform 250ms $animation,
    opacity 250ms $animation;
   }
-
+.project-img img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /*.portfolio{
   padding-top: 60px;
