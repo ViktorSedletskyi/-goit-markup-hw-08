@@ -1,13 +1,18 @@
 .taem-main {
-    background-color:  #F5F4FA;
+ h2{
+    margin-bottom: 30px;}
+        background-color:  #F5F4FA;
         padding-top: 60px;
         padding-bottom: 60px;
     @media screen and (min-width: 1200px){
       padding-top: 94px;
       padding-bottom: 94px;
+      h2{
+    margin-bottom: 50;}
     }
 }
 .team {
+
  .item {
       display: flex;
       flex-wrap: wrap;
@@ -51,6 +56,7 @@
 
 }
 
+
 .card-command {
     padding-top: 30px;
     padding-left: 15px;
@@ -80,8 +86,8 @@
        cursor: pointer;
       }}
 .person {
+    margin-top: 0;
     margin-bottom: 10px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -90,8 +96,8 @@
 
 /* Профессии нашей команды */
 .job {
+    margin-top: 0;
     margin-bottom: 16px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;

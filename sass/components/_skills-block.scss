@@ -1,6 +1,25 @@
-.skills {
+.skills-main{
       padding-top: 60px;
       padding-bottom: 60px;
+      h3{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #212121;
+      }
+   @media screen and (min-width: 1200px) {
+      align-items: center;
+      padding-top: 94px;
+      padding-bottom: 94px;}
+}
+.skills {
+
       .item{ 
         max-width: 450px;
         & + .item{
@@ -33,9 +52,7 @@
         margin-top: 0;}
       } 
        
-      align-items: center;
-      padding-top: 94px;
-      padding-bottom: 94px;
+
       } 
     h3 {
     margin: 0 0 10px;
@@ -63,7 +80,9 @@
   height: 120px;
  }
 
-
+ul{
+  padding: 0;
+}
 
 
 

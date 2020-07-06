@@ -20,12 +20,22 @@
 }
 .logo-f{
   display: inline-block;
-  padding-bottom: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.18;
-  letter-spacing: 0.03em; 
+  margin-bottom: 20px;
+  font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.03em; 
+    @media screen and (min-width: 1200px) {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+    }
 }
 .footer-adress {
     display: flex;
@@ -39,6 +49,8 @@
     .city {
         color: $primary-white-color;
         text-decoration: none;
+        margin-bottom: 9px;
+        margin-top: 0;
     }
 
     .item {
@@ -63,6 +75,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+  @media screen and (min-width: 1200px) {
+      margin-top: 12px;}
 }
 
 .social{
@@ -165,6 +182,7 @@
 
         @media screen and (min-width: 1200px) {
             width: 358px;
+            margin-bottom: 0;
         }
     }
 
